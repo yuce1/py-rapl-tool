@@ -41,23 +41,19 @@ usage: rapl-sety [-h] [-s {0,1}] [-p {pkg_limit_1,pkg_limit_2,dram,pp0,pp1}]
 Tool for RAPL setting
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -s {0,1}, --socket {0,1}
-                        Select the socket (default: all the sockets)
+  -h, --help                 show this help message and exit
+  -s {0,1}, --socket {0,1}   Select the socket (default: all the sockets)
   -p {pkg_limit_1,pkg_limit_2,dram,pp0,pp1}, --power-lane {pkg_limit_1,pkg_limit_2,dram,pp0,pp1}
-                        Select the power lane
+                             Select the power lane
   -l POWER_LIMIT, --power-limit POWER_LIMIT
-                        Set power limit (uW)
+                             Set power limit (uW)
   -t TIME_WINDOW, --time-window TIME_WINDOW
-                        Set time window (us)
-  -el, --enable-limit   Force enable to power limit
-  -dl, --disable-limit  Force disable to power limit
-  -ec, --enable-clamping
-                        Force enable to clamping limit
-  -dc, --disable-clamping
-                        Force disable to clamping limit
-  -sl, --set-lock       Set lock for power lane (WARNING: all write attempts
-                        are ignored until next RESET!)
+                             Set time window (us)
+  -el, --enable-limit        Force enable to power limit
+  -dl, --disable-limit       Force disable to power limit
+  -ec, --enable-clamping     Force enable to clamping limit
+  -dc, --disable-clamping    Force disable to clamping limit
+  -sl, --set-lock            Set lock for power lane (WARNING: all write attempts are ignored until next RESET!)
   -pl {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}, --priority-level {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
-                        Select the priority level
+                             Select the priority level
 ```
